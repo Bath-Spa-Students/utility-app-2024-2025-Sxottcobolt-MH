@@ -45,7 +45,7 @@ def dispense_item(item, price, change):
         print("You have no change remaining.") #Same goes if there is no change.
 
 
-def vending_machine(): #A function, comprised of 4 sub-functions, all wroking in unison.
+def vending_machine(): #A function, comprised of 4 sub-functions, all working in unison.
     while True:
         Show_menu()  #Shows the user the menu.
         selection = obtain_user_choice() #Gets the user's choice
