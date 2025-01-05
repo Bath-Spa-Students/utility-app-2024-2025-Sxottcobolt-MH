@@ -39,7 +39,9 @@ def Show_menu():
     for category, items in menu.items():
         for code, details in items.items():
             table.add_row([code, details['item'], f"${details['price']:.2f}", category])  # Adding the category to the row
-
+    print("Our menu:")
+    print(table)  # Display the menu in a table format
+    
 def obtain_user_choice():  # A function used to let the user choose what they're buying.
     while True:
         Choice = input("Enter the code of your choosing: ")  # Asks the user to input any one of the codes from the menu.
