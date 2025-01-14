@@ -55,7 +55,7 @@ def handle_payment(price): #A function to(as the name implies) handle the paymen
         try:
             money_inserted = float(input(f"Insert ${price:.2f}: ")) #Will ask the user to insert required amount. 
             if money_inserted >= price:
-                change = money_inserted - price #If any money is remaining, return change, via sbutraction of the 
+                change = money_inserted - price #If any money is remaining, return change, via money inserted minus the price of the item
                 return change
             else:
                 print(f"Insufficient funds. You need ${price - money_inserted:.2f} more.") #If the user doesn't have enough money, the user is informed of the shortfall.
